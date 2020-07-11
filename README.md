@@ -1,6 +1,7 @@
 # Practicas-FTC
 Repositorio para practicar programación de FTC en el verano.
-__Documentación:__
+
+## Documentación:
 
 JavaDoc: http://ftctechnh.github.io/ftc_app/doc/javadoc/index.html
 
