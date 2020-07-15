@@ -1,3 +1,4 @@
+package org.firstinspires.ftc.teamcode;
 // package orignal de los ejemplos:
 // package org.firstinspires.ftc.robotcontroller.external.samples;
 
@@ -10,7 +11,7 @@ import com.qualcomm.robotcore.eventloop.opmode.TeleOp;
 import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
-import Jorge.DriveTrain;;
+import org.firstinspires.ftc.teamcode.DriveTrain;
 /**
  * Plantilla para los cogigos de práctica
  * En name escribe tu nombre y UNA palabra que describa
@@ -20,7 +21,7 @@ import Jorge.DriveTrain;;
 
 @TeleOp(name="Jorge: ClaseDriveTrain", group="TwoWheel")
 // @Disabled
-public class Plantilla extends OpMode{
+public class DriveTrainJorge extends OpMode{
     // Declare OpMode members.
     private ElapsedTime runtime = new ElapsedTime();
     private DriveTrain llantas;
@@ -32,12 +33,6 @@ public class Plantilla extends OpMode{
     public void init() {
         telemetry.addData("Status", "Initialized");
 
-        // Initialize the hardware variables. 
-        // Aseguráte de que los nombres coincidan con la configuración
-        // Si estás en la simulación: checa el final de esta plantilla
-        // para conocer los detalles
-        // Si estás con el robot real: revisa que coincidan en el 
-        // Robot configuration
         DriveTrain piernas = new DriveTrain();
 
         // Tell the driver that initialization is complete.
@@ -49,7 +44,8 @@ public class Plantilla extends OpMode{
      */
     @Override
     public void init_loop() {
-        llantas = new Drivetrain();
+
+        llantas = new DriveTrain();
     }
 
     /*
@@ -66,7 +62,7 @@ public class Plantilla extends OpMode{
     @Override
     public void loop() {
         
-        llantas.coducirPOV();
+        llantas.conducirTankDrive();
 
     }
 

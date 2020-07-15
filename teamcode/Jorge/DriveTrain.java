@@ -1,4 +1,4 @@
-package Jorge;
+package org.firstinspires.ftc.teamcode;
 
 import com.qualcomm.robotcore.eventloop.opmode.Disabled;
 import com.qualcomm.robotcore.eventloop.opmode.OpMode;
@@ -8,11 +8,14 @@ import com.qualcomm.robotcore.util.ElapsedTime;
 import com.qualcomm.robotcore.util.Range;
 
 //Clase del subsistema "piernas" del robot
-public class DriveTrain {
+public class DriveTrain extends OpMode {
     //Atributos
     private static DcMotor motorDerecha = null;
     private static DcMotor motorIzquierda = null;
-
+    @Override
+    public void init() {}
+    @Override
+    public void loop() {}
     //Constructor
     public DriveTrain (){
         motorIzquierda  = hardwareMap.get(DcMotor.class, "left_motor");
@@ -33,8 +36,8 @@ public class DriveTrain {
         leftPower    = Range.clip(drive + turn, -1.0, 1.0);
         rightPower   = Range.clip(drive - turn, -1.0, 1.0);
 
-        leftDrive.setPower(leftPower);
-        rightDrive.setPower(rightPower);
+        motorIzquierda.setPower(leftPower);
+        motorDerecha.setPower(rightPower);
     }
     //Conducir con TankDrive
     public void conducirTankDrive(){
@@ -44,8 +47,8 @@ public class DriveTrain {
         leftPower  = -gamepad1.left_stick_y ;
         rightPower = -gamepad1.right_stick_y ;
 
-        leftDrive.setPower(leftPower);
-        rightDrive.setPower(rightPower);
+        motorIzquierda.setPower(leftPower);
+        motorDerecha.setPower(rightPower);
     }
 
 }
