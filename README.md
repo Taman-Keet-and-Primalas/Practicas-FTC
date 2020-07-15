@@ -1,6 +1,12 @@
 # Practicas-FTC
 Repositorio para practicar programación de FTC en el verano.
 
+Vamos a estar probando nuestro código en la simulación del team 8397.
+
+Link al video de instalación: https://www.youtube.com/watch?v=ho0f27KXvqU&feature=youtu.be
+
+Link a su repositorio: https://github.com/Beta8397/virtual_robot/tree/master/doc/javadoc/org/firstinspires/ftc/robotcore/external
+
 ## Documentación:
 
 JavaDoc: http://ftctechnh.github.io/ftc_app/doc/javadoc/index.html
